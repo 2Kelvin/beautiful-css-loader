@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #0d161f;
+}
+
+#loadingContainer{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 500%);
+    overflow: hidden;
+}
+
+.loader{
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border: 2px solid #162534;
+    border-radius: 50%;
+    border-top: 2px solid #09f;
+    /* border-bottom: 2px solid rgb(141, 201, 241);
+    border-right: 2px solid pink; */
+    border-left: 2px solid peru;
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate{
+    100% {
+        transform: rotate(360deg);
+    }
+}
